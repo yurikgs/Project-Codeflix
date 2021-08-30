@@ -1,0 +1,236 @@
+/*
+INITIAL COMMENTS:
+
+---> ABOUT STANDARD MARGINS AND PADDINGS: HTML ELEMENTS DO HAVE SOME OF THEM. SO IF YOU WANT TO HAVE A
+RESPONSIVER CODE, ITS A GOOD THING TO PERFORM "CSS RESETS". WE DO A SIMPLE AND BASIC CSS RESET HERE
+IN THE FIRST CODE, UNDER "*{}"
+
+--->  NO COMEÇO DA FOLHA DE ESTILO, DECLARE TAMBÉM AS CORES DA PALETA DO SEU SITE COMO VARIÁVEIS.
+ISSO FACILITARÁ QUANDO VC QUISER TROCAR ALGUMA COR, DARÁ MUITO MENOS TRABALHO.
+
+---> DECLARE QUALQUER VARIÁVEL NO COMEÇO DO SEU CÓDIGO CSS
+
+---> PARA DECLARAR VARIÁVEIS EM CSS3:
+
+                        :root {
+                            nomeDaVar1: valor;
+                            nomeDaVar2: valor;
+                            nomeDaVar3: valor;
+                            nomeDaVar4: valor;
+                        }
+
+                * mais informações sobre variáveis css: https://developer.mozilla.org/pt-BR/docs/Web/CSS/Using_CSS_custom_properties
+
+---> SIGA UMA ORDEM LÓGICA AO DECLARAR AS CSS STATEMENTS, PARA NÃO FICAR PERDIDO OU TER PROBLEMAS TBM.
+LEMBRE QUE OS VALORES CSS SOBREESCREVEM.
+
+
+*/
+
+
+/*    GLOBAIS     */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    
+    --vermelho: #E50914;
+    --preto: #141414;
+    --pretoTransp1: #141414b4;
+    --pretoTransp2: #14141471; /*Pode ser útil ter uma segunda transpar~encia configurada, para 
+                                   degradês*/
+    
+}
+
+body {
+    background-color: var(--preto);
+    font-family: sans-serif, arial, times;
+    font-weight: lighter;
+    color: white;
+}
+
+.container {
+    margin-left: 30px;
+}
+
+
+
+/* CABEÇALHO */
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+}
+
+.menuEstatico {                         /* MODIFICAÇÃO DO MENU DE ACORDO COM O SCROLL (C/ JQUERY) */
+    background-color: rgba(0,0,0,0);
+    height: 60px;
+}
+.menuScroll {                           /* MODIFICAÇÃO DO MENU DE ACORDO COM O SCROLL (C/ JQUERY) */
+    background-color: var(--preto);
+    height: 60px;
+}
+
+
+header .container {
+    width: 97%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .headerContainer {
+    font-size: inherit;
+}
+
+header #logo {
+    color: var(--vermelho);
+    font-family: sans-serif, arial, times;
+    font-size: 40px;
+}
+
+/*   ---> header nav a        */
+
+.fonteEstatica {                     /* MODIFICAÇÃO DO MENU DE ACORDO COM O SCROLL (C/ JQUERY) */
+    font-weight: bold;
+    text-decoration: none;
+    color:#AAA;
+    margin-left: 20px;
+}
+
+.fonteScroll {                       /* MODIFICAÇÃO DO MENU DE ACORDO COM O SCROLL (C/ JQUERY) */
+    font-weight: bold;
+    text-decoration: none;
+    color:rgb(238, 237, 237);
+    margin-left: 20px;
+}
+
+
+header nav a:hover {
+    color: #FFF;
+    font-size: 1.1em;
+}
+
+
+/*      DESTAQUES / MAIN        */
+
+.destaques  {
+    font-size: 20px;
+    background: linear-gradient(to bottom, var(--pretoTransp1), rgba(0,0,0,.4) 82%, var(--preto)), url("/img/matrix-filme.jpg");
+                   /*Observe como este bg acima está configurado,
+                   colocando um camada de transparência sobre a imagem de bg.
+                   Para IMAGENS MAIS CLARAS aumente o nível de opacidade rgba()
+                   nas duas extremidades igualmente.*/
+                   /*Quanto à configuração das cores, cuidado ao usar as porcentagens.
+                   colocar porcentagem em mais de uma cor pode causar uma quebra ("degrau") no
+                   gradiente.*/
+    background-repeat: none;
+    background-size: cover;
+    height: 740px; /*   -> É importante fixar a altura da box, padronizando a visualização da home*/ 
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;/*Como aqui a flex-dir é column, esse comando "cola" os elementos no centro, verticalmente.*/
+    align-items: flex-start;/*Esse é o comando certo para manter os elementos à esquerda*/
+    /*NOTA: note que tanto o justify-content qt o align-items mudam a orientação (vertical/horizontal) de acordo com
+    o valor da flex-direction.*/
+
+}
+
+.destaques .container {
+    margin-top: -5em;  /* AJUSTE DE POSIÇÃO DA CAIXA DE TEXTO DOS DESTAQUES*/
+    margin-left: 2.5em;   /* AJUSTE DE POSIÇÃO DA CAIXA DE TEXTO DOS DESTAQUES*/
+    padding: 1% 3% 3% 10px; /* O PADDING SUPERIOR EM PORCENTAGEM PERMITE O AJUSTE DA ALTURA
+                              EM FUNÇÃO DA LARGURA DA TELA, JÁ QUE NESSE CASO TODOS OS PADDINGS
+                              EM PORCENTAGEM SEGUEM SEMPRE A LARGURA DA DIV PAI */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;/*Como aqui a flex-dir é column, esse comando "cola" os elementos no centro, verticalmente.*/
+    align-items: flex-start;/*Esse é o comando certo para manter os elementos à esquerda*/
+    /*NOTA: note que tanto o justify-content qt o align-items mudam a orientação (vertical/horizontal) de acordo com
+    o valor da flex-direction.*/
+}
+
+.destaques .titulo {
+    width: 35%;
+    font-size: 2.2em;
+    font-family: 'Trebuchet MS',  Arial, sans-serif;
+}
+
+.destaques .descricao {
+    margin-top: 8px;
+    width: 40%;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+
+.destaques .envelope-btn {
+    display: flex;
+    flex-direction:row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.destaques .btn {
+    color: #CCC;
+    background-color: rgba(0,0,0,.8);
+    border: none; /*É preciso tirar as bordas, pq os botões vêm com ela por padrão*/
+
+    padding: 10px 15px;
+    margin-right:7em;
+
+    cursor: pointer; /*Aqui o cursor muda para 'mãoznha' sempre que o mouse passa pelo botão*/
+    transition: 0.4s; /*Controla o tempo e como é feita a transição para o hover*/
+}
+
+.destaques .btn:hover {
+    color: black;
+    background-color: rgba(255,255,255,1);
+    font-weight: bold;
+}
+
+.destaques .btn i {
+    margin-right: 7px;
+}
+
+
+
+/*  CARROSSEL DE IMAGENS  */
+
+.carrossel-container {
+    margin-top: -140px;  /* AJUSTE DE ALTURA DO CARROSSEL EM RELAÇÃO AOS DESTAQUES */
+}
+
+.carrossel-filmes {
+    padding: 1.5%;
+}
+
+.movie-box {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+}
+footer #copyrights {
+    color: rgba(255,255,255,.8);
+    line-height: 1.5em;
+    text-align: center;
+    padding: 5px 20% 25px 20%;
+}
+footer #copyrights span {
+    font-weight: bold;
+    color: rgba(255,255,255,1);
+}
