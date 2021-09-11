@@ -132,6 +132,12 @@ header nav a:hover {
                    /*Quanto à configuração das cores, cuidado ao usar as porcentagens.
                    colocar porcentagem em mais de uma cor pode causar uma quebra ("degrau") no
                    gradiente.*/
+
+    /* ENDEREÇAMENTO PARA FUNCIONAR NORMALMENTE NO PC (CAMINHO DO MEU PC, TEM QUE ADAPTAR A URL PARA O PC QUE ESTIVER USANDO):
+    
+    background: linear-gradient(to bottom, var(--pretoTransp1), rgba(0,0,0,.4) 82%, var(--preto)), url("C:/Users/Mário/Documents/03 ESTUDO/9_PROJETOS/PROJETOS_INFO/Site de Streaming (estilo netflix)/modelo-clone-netflix/img/matrix-filme.jpg");
+    
+    */
     background-repeat: none;
     background-size: cover;
     height: 740px; /*   -> É importante fixar a altura da box, padronizando a visualização da home*/ 
