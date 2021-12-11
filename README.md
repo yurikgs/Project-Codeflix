@@ -37,7 +37,7 @@ Usei o JQuery para construir o menu dinâmico e os carrocéis de vídeo - para o
  <br><br>
 
 <div align="center">
-Tech Responsible: Yuri Silva 👉 [Meet Me!](https://www.linkedin.com/in/yuri-silva-dev/)
+Tech Responsible: Yuri Silva 👉 <a href="https://www.linkedin.com/in/yuri-silva-dev/">Meet Me!</a>
 </div>
 	
 	
