@@ -1,14 +1,23 @@
-# Modelo "Clone" Netflix
-Modelo simples e editável de Site de streaming de vídeo inspirado na Netflix
+![preview-codeflix-github](https://user-images.githubusercontent.com/38916533/147865770-4efae731-abd2-47b7-a83a-b58681c5b516.png)
+
+
+# Projeto CODEFLIX
+Projeto de site de ajuda para quem quer começar a aprender programação, no estilo streaming de vídeo. 
 
 ## Tecnologias utilizadas:
 
 <img align="center" alt="HTML5" height="45" width="60" src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-plain-wordmark.svg"> <img align="center" alt="CSS3" height="45" width="60" src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"> <img align="center" alt="JS" height="45" width="60" src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-plain.svg"> <img align="center" alt="JQuery" height="45" width="60" src="https://github.com/devicons/devicon/blob/master/icons/jquery/jquery-original-wordmark.svg"> 
 
+<h2>Status do projeto: Em construção...</h2>
+<divr">
+<b><em>Home:</em> Desktop - finalizado, responsivo pendente. <br>
+<em>Próximas atualizações:</em> implementação do css responsivo do site, implementação das páginas de conteúdo selcionado, criação das páginas sobre nós, além do código e outros recursos.</b>
+</div>
+
 ## Descrição:
 
 <p>
-Um modelo simples que pode ser aproveitado para front end de sites de streaming de vídeo. Inclui aperfeçoamento para execução em multiplos tamanhos de telas (reponsivo).
+Há um público enorme que está começando no código, mas não tem recursos suficientes para levar adiante seus estudos, de uma forma tradicional(paga). E nem precisa... A internet está abarrotada com até muito mais do que é necessário aprender, para está começando. A proposta desse projeto é aproximar esse público do melhor que é possivel encontrar hoje - completamente free - na web. (Nota: Esse projeto é apenas uma demonstração, não será 'subido' ou listá-lo em mecanismos de buscas)
 </p>
 
 ## Aspectos técnicos
