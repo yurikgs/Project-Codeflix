@@ -22,7 +22,7 @@ Há um público enorme que está começando no código, mas não tem recursos su
 
 ## Aspectos técnicos
 
-<p><b><em>Importante:</em></b> todos os arquivos do projeto estão na pasta root.</p> <br>
+<p><b><em>Importante:</em></b> todos os arquivos do projeto estão na pasta root.</p>
 <p>
 Usei o JQuery para construir o menu dinâmico e os carrocéis de vídeo - para os quais me utilizei do owl carroussel. A pasta JS está divida em uma sub pasta para o jquery, em uma outra para o owl carroussel, e um arquivo setup.js que também servirá à configuração do owl. O CSS também tem uma sub pasta apenas para os arquivos owl, além de um arquivo com o css principal, e um outro dedicado apenas à responsividade do projeto.
 </p>
