@@ -9,6 +9,7 @@ Projeto de site de ajuda para quem quer começar a aprender programação, no es
 <img align="center" alt="HTML5" height="45" width="60" src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-plain-wordmark.svg"> <img align="center" alt="CSS3" height="45" width="60" src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"> <img align="center" alt="JS" height="45" width="60" src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-plain.svg"> <img align="center" alt="JQuery" height="45" width="60" src="https://github.com/devicons/devicon/blob/master/icons/jquery/jquery-original-wordmark.svg"> 
 
 <h2>Status do projeto: Em construção...</h2>
+<p><b><em><a href="https://project-codeflix-mqygurry7-yurikgs.vercel.app/index.html">Veja aqui o projeto no vercell!</a></em></b></p>
 <divr">
 <b><em>Home:</em> Desktop - finalizado, responsivo pendente. <br>
 <em>Próximas atualizações:</em> implementação do css responsivo do site, implementação das páginas de conteúdo selcionado, criação das páginas sobre nós, além do código e outros recursos.</b>
@@ -28,6 +29,7 @@ Usei o JQuery para construir o menu dinâmico e os carrocéis de vídeo - para o
 </p>
 
 <p><b><em>Como executar --></em></b> <em>Para executar e testar o arquivo, basta abrir o arquivo index.html, que está na pasta raiz/principal, com o navegador de sua preferência.</em></p>
+<a href="https://project-codeflix-mqygurry7-yurikgs.vercel.app/index.html">Ou então acesse aqui o projeto no vercell<<< </a>
 
 <br><br>
 
