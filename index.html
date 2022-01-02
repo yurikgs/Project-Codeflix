@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-   <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NETFLIX</title>
-    
+    <title>CODEFLIX - A ALEGRIA DO PROGRAMADOR</title>
+
     <!-- css padrão -->
     <link rel="stylesheet" type="text/css" href="style/main.css">
 
@@ -15,252 +15,440 @@
 
     <!-- responsividade -->
     <link rel="stylesheet" href="style/responsive.css">
-    
 
+    <!-- Ajuste nos padrões do owl -->
+    <style>
+        /* AJUSTE NAS SETAS DA NAV OWL, E RETIRADA DOS PONTOS*/
+        
+        .owl-theme .owl-nav {
+            margin: 0;
+        }
+        
+        .owl-dots.disabled {
+            display: none;
+        }
+        
+        .carousel-small-container .owl-theme .owl-nav {
+            height: 1px;
+            position: absolute;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            align-items: top;
+            justify-content: space-between;
+            /*Ajuste pós troca de ícone next/prev : */
+            margin-top: -0.8vh;
+            margin-left: -0.4vw;
+            width: 100.9%;
+        }
+        
+        #carousel-big-1 .owl-nav.disabled {
+            display: none;
+        }
+        
+        #carousel-big-1 .owl-dot {
+            display: none;
+        }
+    </style>
 </head>
+
 <body>
     <header>
-      <div class="menuEstatico"> <!-- ESTA DIV TEM COMO ÚNICA FUNÇÃO A MUDANÇA DO MENU 
+        <div class="menuEstatico">
+            <!-- ESTA DIV TEM COMO ÚNICA FUNÇÃO A MUDANÇA DO MENU 
                                       DE ACORDO COM O SCROLL (VER SCRPT NO FINAL DO CÓDIGO)
                                       ACABOU SENDO NECESSÁRIA PQ QUANDO EFETUEI AS MUDANÇAS DE
                                       COR ADICIONANDO UMA CLASSE DIRETO NO HEADER, TODAS AS OUTRAS
                                       PROPRIEDADES, DE FLUTUAÇÃO DO MENU, PARARAM DE FUNCIONAR.-->
-        <div class="container">
-            <h2 id="logo">NETFLIX</h2>
+            <div class="container">
+                <a href="./index.html">
+                    <h1 id="logo">CODEFLIX</h1>
+                </a>
 
-            <nav>
-                
-                <a class="fonteEstatica" href="#">Início</a>
-                <a class="fonteEstatica" href="#">Séries</a>
-                <a class="fonteEstatica" href="#">Filmes</a>
-                <a class="fonteEstatica" href="#">Documentários</a>
+                <nav>
 
-            </nav>
+                    <a class="fonteEstatica" href="#">Início</a>
+                    <a class="fonteEstatica" href="maintenance.html">Além do Código</a>
+                    <a class="fonteEstatica" href="maintenance.html"> +Recursos</a>
+                    <a class="fonteEstatica" href="maintenance.html">Sobre Nós</a>
 
+                </nav>
+
+            </div>
         </div>
-      </div>
     </header>
     <main>
-            <div class="destaques">
-                <div class="container">
-                    <h3 class="titulo">Movie Title Here</h3>
-                    <p class="descricao">Mussum Ipsum, cacilds vidis litro abertis. 
-                        Sapien in monti palavris qui num significa 
-                        nadis i pareci latim. Delegadis gente finis, 
-                        bibendum egestas augue arcu ut est. Sed non ipsum felis.</p>
-                    
-                
-                    <div class="envelope-btn">
-                        <button class="btn" role="button">
+
+        <div class="destaques">
+            <div class=" marginContainer destaquesContainer">
+                <h3 class="titulo">Curso Em Vídeo Guanabara - Nova Série Html/CSS</h3>
+                <p class="descricaoDestaques">O mais badalado do youtube agora com a nova série de hmtl5 / CSS3 atualizadíssimos. Conteúdo completo, bem explicado e orientado ao mercado de trabalho. Confira!
+                </p>
+
+
+                <div class="envelope-btn">
+                    <button class="btn" role="button">
                             <i class="fas fa-info"></i>
-                            SINOPSE
+                            VEJA O CANAL
                         </button>
-                        <button class="btn" role="button">
+                    <button class="btn" role="button">
                             <i class="fas fa-play"></i>
-                            ASSISTIR AGORA
+                            ASSISTIR PLAYLIST AGORA
                         </button>
-                    </div>
                 </div>
-            </div>   
-            
+            </div>
+        </div>
+
     </main>
 
-    <div class="carrossel-container">
-        
-        <div class="carrossel-filmes">
-            <div class="owl-carousel owl-theme">
 
-                <div class="item">
-                    <img class="movie-box" src="img/min/min (1).jpg" alt="">
+    <section class="carrossel-container" id="carrossel-1">
 
-                </div>
-                <div class="item">
-                    <img class="movie-box" src="img/min/min (2).jpg" alt="">
 
-                </div>
-                <div class="item">
-                    <img class="movie-box" src="img/min/min (3).jpg" alt="">
-
-                </div>
-                <div class="item">
-                    <img class="movie-box" src="img/min/min (4).jpg" alt="">
-
-                </div>
-                <div class="item">
-                    <img class="movie-box" src="img/min/min (5).jpg" alt="">
-
-                </div>
-                <div class="item">
-                    <img class="movie-box" src="img/min/min (6).jpg" alt="">
-
-                </div>
-                <div class="item">
-                    <img class="movie-box" src="img/min/min (7).jpg" alt="">
-
-                </div>
-                <div class="item">
-                    <img class="movie-box" src="img/min/min (8).jpg" alt="">
-
-                </div>
-                <div class="item">
-                    <img class="movie-box" src="img/min/min (9).jpg" alt="">
-
-                </div>
-                <div class="item">
-                    <img class="movie-box" src="img/min/min (10).jpg" alt="">
-
-                </div>
-
-            </div>
+        <div class="h2-container">
+            <h2 class="marginContainer">Só os Melhores...</h2>
         </div>
 
-        <div class="carrossel-filmes">
-            <div class="owl-carousel owl-theme">
+        <div class="carrossel-filmes marginContainer carousel-small-container">
 
-                <div class="item">
-                    <img class="movie-box" src="img/min/min (10).jpg" alt="">
+            <div class="owl-carousel owl-theme" id="carousel-small-1">
 
+                <!-- ITEM HERE    vvvv -->
+                <div class="link-box item">
+                    <div class="movie-box">
+
+                        <div class="preview-image" style="background-image: url(/img/thumbnails/peq/thumbs/guanabara-html5-ccs3.jpg)"></div>
+
+                    </div>
+                    <div class="descricaoMovie">
+                        <span class="descricaoText">Curso Html5/CSS3 Gustavo Guanabara</span>
+                    </div>
+                    <a class="small-prev-overlay" href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n">
+                    </a>
                 </div>
-                <div class="item">
-                    <img class="movie-box" src="img/min/min (9).jpg" alt="">
+                <!-- ITEM HERE    ^^^^ -->
 
-                </div>
-                <div class="item">
-                    <img class="movie-box" src="img/min/min (3).jpg" alt="">
+                <!-- ITEM HERE    vvvv -->
+                <div class="link-box item">
+                    <div class="movie-box">
 
-                </div>
-                <div class="item">
-                    <img class="movie-box" src="img/min/min (4).jpg" alt="">
+                        <div class="preview-image" style="background-image: url(/img/thumbnails/peq/thumbs/codigo-fonte-ecossistema-js.jpg)"></div>
 
+                    </div>
+                    <a class="small-prev-overlay" href="https://www.youtube.com/watch?v=GML8zQJg9D4&list=PLVc5bWuiFQ8HA-_-_wjRSSrR27IqfbtPc">
+                    </a>
+                    <div class="descricaoMovie">
+                        <span class="descricaoText">Ecossistema JS e Webscraping no Código Fonte TV</span>
+                    </div>
                 </div>
-                <div class="item">
-                    <img class="movie-box" src="img/min/min (5).jpg" alt="">
+                <!-- ITEM HERE    ^^^^ -->
 
-                </div>
-                <div class="item">
-                    <img class="movie-box" src="img/min/min (6).jpg" alt="">
+                <!-- ITEM HERE    vvvv -->
+                <div class="link-box item">
+                    <div class="movie-box">
 
-                </div>
-                <div class="item">
-                    <img class="movie-box" src="img/min/min (7).jpg" alt="">
+                        <div class="preview-image" style="background-image: url(/img/thumbnails/peq/thumbs/guanabara-javascript-do-zero.jpg)"></div>
 
+                    </div>
+                    <a class="small-prev-overlay" href="https://www.youtube.com/watch?v=1-w1RfGIov4&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1">
+                    </a>
+                    <div class="descricaoMovie">
+                        <span class="descricaoText">Javascript do Zero com Gustavo Guanabara</span>
+                    </div>
                 </div>
-                <div class="item">
-                    <img class="movie-box" src="img/min/min (8).jpg" alt="">
+                <!-- ITEM HERE    ^^^^ -->
 
-                </div>
-                <div class="item">
-                    <img class="movie-box" src="img/min/min (2).jpg" alt="">
+                <!-- ITEM HERE    vvvv -->
+                <div class="link-box item">
+                    <div class="movie-box">
 
-                </div>
-                <div class="item">
-                    <img class="movie-box" src="img/min/min (1).jpg" alt="">
+                        <div class="preview-image" style="background-image: url(/img/thumbnails/peq/thumbs/michelli-brito-jpa-persistence-api.jpg)"></div>
 
+                    </div>
+                    <a class="small-prev-overlay" href="https://www.youtube.com/watch?v=TQQki9yQaLg&list=PL8iIphQOyG-CLO45G8gWP6sCMxsB4eIQR">
+                    </a>
+                    <div class="descricaoMovie">
+                        <span class="descricaoText">JPA Java Persistence API com Michelli Brito</span>
+                    </div>
                 </div>
+                <!-- ITEM HERE    ^^^^ -->
+
+                <!-- ITEM HERE    vvvv -->
+                <div class="link-box item">
+                    <div class="movie-box">
+
+                        <div class="preview-image" style="background-image: url(/img/thumbnails/peq/thumbs/codigo-fonte-mao-no-codigo.jpg)"></div>
+
+                    </div>
+                    <a class="small-prev-overlay" href="https://www.youtube.com/watch?v=LT-iNSrGoP8&list=PLVc5bWuiFQ8FQIWovvUiOO9ok_b6chPsh">
+                    </a>
+                    <div class="descricaoMovie">
+                        <span class="descricaoText">Código fonte Mão no Código</span>
+                    </div>
+                </div>
+                <!-- ITEM HERE    ^^^^ -->
 
             </div>
-        </div>
 
-        <div class="carrossel-filmes">
-            <div class="owl-carousel owl-theme">
 
-                <div class="item">
-                    <img class="movie-box" src="img/min/min (2).jpg" alt="">
-
-                </div>
-                <div class="item">
-                    <img class="movie-box" src="img/min/min (3).jpg" alt="">
-
-                </div>
-                <div class="item">
-                    <img class="movie-box" src="img/min/min (1).jpg" alt="">
-
-                </div>
-                <div class="item">
-                    <img class="movie-box" src="img/min/min (4).jpg" alt="">
-
-                </div>
-                <div class="item">
-                    <img class="movie-box" src="img/min/min (5).jpg" alt="">
-
-                </div>
-                <div class="item">
-                    <img class="movie-box" src="img/min/min (6).jpg" alt="">
-
-                </div>
-                <div class="item">
-                    <img class="movie-box" src="img/min/min (7).jpg" alt="">
-
-                </div>
-                <div class="item">
-                    <img class="movie-box" src="img/min/min (8).jpg" alt="">
-
-                </div>
-                <div class="item">
-                    <img class="movie-box" src="img/min/min (9).jpg" alt="">
-
-                </div>
-                <div class="item">
-                    <img class="movie-box" src="img/min/min (10).jpg" alt="">
-
-                </div>
-
-            </div>
         </div>
 
 
-    </div>
+    </section>
+
+
+
+
+    <section class="marginContainer carrossel-big-container">
+
+        <article class="owl-carousel owl-theme" id="carousel-big-1">
+
+            <!-- ITEM HERE    vvvv -->
+            <div class="big-item link-box-big">
+
+                <div class="movie-box-big">
+                    <img src="img/thumbnails/big/thumbs/java-dark-simbol-3d.jpg" alt="Java Warriors">
+                </div>
+                <a class="big-prev-overlay" href="#"></a>
+                <div class="big-descricaoMovie">
+                    <span class="big-descricaoText">JAVA</span>
+                </div>
+
+            </div>
+            <!-- ITEM HERE    ^^^^ -->
+
+            <!-- ITEM HERE    vvvv -->
+            <div class="big-item link-box-big">
+
+                <div class="movie-box-big">
+                    <img src="img/thumbnails/big/thumbs/php-elefant.png" alt="Java Warriors">
+                </div>
+                <a class="big-prev-overlay" href="#"></a>
+                <div class="big-descricaoMovie">
+                    <span class="big-descricaoText">PHP</span>
+                </div>
+
+            </div>
+            <!-- ITEM HERE    ^^^^ -->
+
+            <!-- ITEM HERE    vvvv -->
+            <div class="big-item link-box-big">
+
+                <div class="movie-box-big">
+                    <img src="img/thumbnails/big/thumbs/c-in-the-wall.jpg" alt="Java Warriors">
+                </div>
+                <a class="big-prev-overlay" href="#"></a>
+                <div class="big-descricaoMovie">
+                    <span class="big-descricaoText">C & Co</span>
+                </div>
+
+            </div>
+            <!-- ITEM HERE    ^^^^ -->
+
+            <!-- ITEM HERE    vvvv -->
+            <div class="big-item link-box-big">
+
+                <div class="movie-box-big">
+                    <img src="img/thumbnails/big/thumbs/javacript-simbol-1.png" alt="Java Warriors">
+                </div>
+                <a class="big-prev-overlay" href="#"></a>
+                <div class="big-descricaoMovie">
+                    <span class="big-descricaoText">Javascript</span>
+                </div>
+
+            </div>
+            <!-- ITEM HERE    ^^^^ -->
+
+            <!-- ITEM HERE    vvvv -->
+            <div class="big-item link-box-big">
+
+                <div class="movie-box-big">
+                    <img src="img/thumbnails/big/thumbs/phyton-simbol-1.jpg" alt="Java Warriors">
+                </div>
+                <a class="big-prev-overlay" href="#"></a>
+                <div class="big-descricaoMovie">
+                    <span class="big-descricaoText">Phyton</span>
+                </div>
+
+            </div>
+            <!-- ITEM HERE    ^^^^ -->
+
+
+        </article>
+
+        <article class="title-text-right" style="width: 40%; height: 100%;">
+            <h2>O que é <span class="span-highlight">+</span><br><em>a sua cara?</em></h2>
+            <p>Escolha a seleção de conteúdo que <span class="span-highlight"> combina mais com <strong>você!</strong></span>
+            </p>
+        </article>
+    </section>
+
+
+
+
+
+    <section class="carrossel-container" id="carrossel-small-2">
+
+
+        <div class="h2-container">
+            <h2 class="marginContainer">Aprendendo um novo Idioma</h2>
+        </div>
+
+        <div class="carrossel-filmes marginContainer carousel-small-container">
+
+            <div class="owl-carousel owl-theme" id="carousel-small-2">
+
+                <!-- ITEM HERE    vvvv -->
+                <div class="link-box item">
+                    <div class="movie-box">
+
+                        <div class="preview-image" style="background-image: url(/img/thumbnails/peq/thumbs/node-studios-php7.jpg)"></div>
+
+                    </div>
+                    <div class="descricaoMovie">
+                        <span class="descricaoText">Curso PHP - Node Studios</span>
+                    </div>
+                    <a class="small-prev-overlay" href="https://www.youtube.com/watch?v=XwpsxPmQN2E&list=PLwXQLZ3FdTVEITn849NlfI9BGY-hk1wkq">
+                    </a>
+                </div>
+                <!-- ITEM HERE    ^^^^ -->
+
+                <!-- ITEM HERE    vvvv -->
+                <div class="link-box item">
+                    <div class="movie-box">
+
+                        <div class="preview-image" style="background-image: url(/img/thumbnails/peq/thumbs/ricardo-maroquio-html5-css3.jpg)"></div>
+
+                    </div>
+                    <a class="small-prev-overlay" href="https://www.youtube.com/watch?v=aInMGjLRB-g&list=PL0YuSuacUEWuLNDAAJxATh54w_XmrLkk4">
+                    </a>
+                    <div class="descricaoMovie">
+                        <span class="descricaoText">HTML5 e CSS3 na Criação de Sites - Ricardo Maroquio</span>
+
+                    </div>
+                </div>
+                <!-- ITEM HERE    ^^^^ -->
+
+                <!-- ITEM HERE    vvvv -->
+                <div class="link-box item">
+                    <div class="movie-box">
+
+                        <div class="preview-image" style="background-image: url(/img/thumbnails/peq/thumbs/guanabara-javascript-do-zero.jpg)"></div>
+
+                    </div>
+                    <a class="small-prev-overlay" href="https://www.youtube.com/watch?v=1-w1RfGIov4&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1">
+                    </a>
+                    <div class="descricaoMovie">
+                        <span class="descricaoText">Javascript do Zero com Gustavo Guanabara</span>
+                    </div>
+                </div>
+                <!-- ITEM HERE    ^^^^ -->
+
+                <!-- ITEM HERE    vvvv -->
+                <div class="link-box item">
+                    <div class="movie-box">
+
+                        <div class="preview-image" style="background-image: url(/img/thumbnails/peq/thumbs/guanabara-java-do-zero.jpg)"></div>
+
+                    </div>
+                    <a class="small-prev-overlay" href="https://www.youtube.com/watch?v=sTX0UEplF54&list=PLHz_AreHm4dkI2ZdjTwZA4mPMxWTfNSpR">
+                    </a>
+                    <div class="descricaoMovie">
+                        <span class="descricaoText">Linguagem JAVA do Zero com Gustavo Guanabara</span>
+                    </div>
+                </div>
+                <!-- ITEM HERE    ^^^^ -->
+
+                <!-- ITEM HERE    vvvv -->
+                <div class="link-box item">
+                    <div class="movie-box">
+
+                        <div class="preview-image" style="background-image: url(/img/thumbnails/peq/thumbs/ricardo-maroquio-c-sharp.jpg)"></div>
+
+                    </div>
+                    <a class="small-prev-overlay" href="https://www.youtube.com/playlist?list=PL0YuSuacUEWsHR_a22z31bvA2heh7iUgr">
+                    </a>
+                    <div class="descricaoMovie">
+                        <span class="descricaoText">C# com Ricardo Maroquio</span>
+                    </div>
+                </div>
+                <!-- ITEM HERE    ^^^^ -->
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
 
     <footer>
+        <nav>
+            <p> <span class="copy-text-small">CODEFLIX</span><span class="copy-symbol"> &copy;</span></p>
+            <a class="fonteEstatica" href="maintenance.html">Início</a>
+            <a class="fonteEstatica" href="maintenance.html">Além do Código</a>
+            <a class="fonteEstatica" href="maintenance.html">+Recursos</a>
+            <a class="fonteEstatica" href="maintenance.html">Sobre Nós</a>
+        </nav>
         <div id="copyrights">
-            <p><i>Modelo simples de clone de site estilo Netflix. Responsável Técnico: 
-            <span>Yuri Silva</span></i></p>
+            <p><i>Projeto de site de streaming para ajudar quem quer aprender programação.<br>Responsável Técnico: 
+                <a href="https://www.linkedin.com/in/yuri-silva-dev/">Yuri Silva (>>meet me)</a></i></p>
         </div>
     </footer>
+
+
+
+
     <!--
         ->LINKAGEM DE JS<-
 
-        >>>>>>>>>>> ATENÇÃO!  AO LINKAR O JS DO OWL É INDISPENSÁVEL LINKR NA ORDEM CORRETA, SE NÃO, 
+        >>>>>>>>>>> ATENÇÃO!  AO LINKAR O JS DO OWL É INDISPENSÁVEL LINKAR NA ORDEM CORRETA, SE NÃO, 
         NÃO VAI FUNCIONAR. A ORDEM É:  JQUERY > OWLCAROUSEL > SETUP PARA OWL. 
                    >>> ERROS ESPERADOS: REFERENCE ERROR, NÃO RECONHECE '$'
 
     -->
 
-        <!-- font-awesome JS -->
-        <script src="https://kit.fontawesome.com/cd3c6c7897.js" crossorigin="anonymous"></script>
-    
-        <!-- Jquery JS -->
-        <script src="js/jquery/jquery.min.js"></script>      
-        
-        <!-- owl JS -->
-        <script src="js/owl/owl.carousel.min.js"></script>
+    <!-- font-awesome JS -->
+    <script src="https://kit.fontawesome.com/cd3c6c7897.js" crossorigin="anonymous"></script>
 
-        <!-- JS Config -->
-        <script src="js/setup.js"></script> 
+    <!-- Jquery JS -->
+    <script src="js/jquery/jquery.min.js"></script>
 
-        <!-- Configuração de scroll para o menu com cor dinâmica - Jquery -->
-        <script>
-            $(function() {
-                $(window).on("scroll", function() {
-                    if ($(window).scrollTop() > 75) {
-                        $(".menuEstatico").addClass("menuScroll");
-                    } else {
-                        $(".menuEstatico").removeClass("menuScroll")
-                    }
-                })
+    <!-- owl JS -->
+    <script src="js/owl/owl.carousel.js"></script>
+
+    <!-- JS Config -->
+    <script src="js/setup.js"></script>
+
+    <!-- Configuração de scroll para o menu com cor dinâmica - Jquery -->
+    <script>
+        $(function() {
+            $(window).on("scroll", function() {
+                if ($(window).scrollTop() > 75) {
+                    $(".menuEstatico").addClass("menuScroll");
+                } else {
+                    $(".menuEstatico").removeClass("menuScroll")
+                }
             })
+        })
 
-            $(function() {
-                $(window).on("scroll", function() {
-                    if ($(window).scrollTop() > 75) {
-                        $(".fonteEstatica").addClass("fonteScroll");
-                    } else {
-                        $(".fonteEstatica").removeClass("fonteScroll")
-                    }
-                })
+        $(function() {
+            $(window).on("scroll", function() {
+                if ($(window).scrollTop() > 75) {
+                    $(".fonteEstatica").addClass("fonteScroll");
+                } else {
+                    $(".fonteEstatica").removeClass("fonteScroll")
+                }
             })
-        </script>
+        })
+    </script>
 
-    
+
 </body>
+
 </html>

@@ -37,13 +37,13 @@ LEMBRE QUE OS VALORES CSS SOBREESCREVEM.
 }
 
 :root {
-    
     --vermelho: #E50914;
+    --amarelo: #d6e509;
     --preto: #141414;
     --pretoTransp1: #141414b4;
-    --pretoTransp2: #14141471; /*Pode ser útil ter uma segunda transpar~encia configurada, para 
+    --pretoTransp2: #14141471;
+    /*Pode ser útil ter uma segunda transparência configurada, para 
                                    degradês*/
-    
 }
 
 body {
@@ -53,10 +53,10 @@ body {
     color: white;
 }
 
-.container {
-    margin-left: 30px;
+.marginContainer {
+    margin-left: 3vw;
+    margin-right: 3vw;
 }
-
 
 
 /* CABEÇALHO */
@@ -67,15 +67,17 @@ header {
     z-index: 9999;
 }
 
-.menuEstatico {                         /* MODIFICAÇÃO DO MENU DE ACORDO COM O SCROLL (C/ JQUERY) */
-    background-color: rgba(0,0,0,0);
-    height: 60px;
-}
-.menuScroll {                           /* MODIFICAÇÃO DO MENU DE ACORDO COM O SCROLL (C/ JQUERY) */
-    background-color: var(--preto);
+.menuEstatico {
+    /* MODIFICAÇÃO DO MENU DE ACORDO COM O SCROLL (C/ JQUERY) */
+    background-color: rgba(0, 0, 0, 0);
     height: 60px;
 }
 
+.menuScroll {
+    /* MODIFICAÇÃO DO MENU DE ACORDO COM O SCROLL (C/ JQUERY) */
+    background-color: var(--preto);
+    height: 60px;
+}
 
 header .container {
     width: 97%;
@@ -91,28 +93,38 @@ header .headerContainer {
     font-size: inherit;
 }
 
+header .container a {
+    text-decoration: none;
+}
+
 header #logo {
-    color: var(--vermelho);
+    color: var(--amarelo);
     font-family: sans-serif, arial, times;
     font-size: 40px;
 }
 
+
 /*   ---> header nav a        */
 
-.fonteEstatica {                     /* MODIFICAÇÃO DO MENU DE ACORDO COM O SCROLL (C/ JQUERY) */
+.fonteEstatica {
+    /* MODIFICAÇÃO DO MENU DE ACORDO COM O SCROLL (C/ JQUERY) */
     font-weight: bold;
     text-decoration: none;
-    color:#AAA;
+    color: #AAA;
     margin-left: 20px;
 }
 
-.fonteScroll {                       /* MODIFICAÇÃO DO MENU DE ACORDO COM O SCROLL (C/ JQUERY) */
-    font-weight: bold;
-    text-decoration: none;
-    color:rgb(238, 237, 237);
-    margin-left: 20px;
+.fonteEstatica:hover {
+    color: white;
 }
 
+.fonteScroll {
+    /* MODIFICAÇÃO DO MENU DE ACORDO COM O SCROLL (C/ JQUERY) */
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(238, 237, 237);
+    margin-left: 20px;
+}
 
 header nav a:hover {
     color: #FFF;
@@ -122,41 +134,44 @@ header nav a:hover {
 
 /*      DESTAQUES / MAIN        */
 
-.destaques  {
+.destaques {
     font-size: 20px;
-    background: linear-gradient(to bottom, var(--pretoTransp1), rgba(0,0,0,.4) 82%, var(--preto)), url("../img/matrix-filme.jpg");
-                   /*Observe como este bg acima está configurado,
+    background: linear-gradient(to bottom, var(--pretoTransp1), rgba(0, 0, 0, .2) 70%, var(--preto)), url("../img/banners/banner-curso-em-video-html5-css.png");
+    /*Observe como este bg acima está configurado,
                    colocando um camada de transparência sobre a imagem de bg.
                    Para IMAGENS MAIS CLARAS aumente o nível de opacidade rgba()
                    nas duas extremidades igualmente.*/
-                   /*Quanto à configuração das cores, cuidado ao usar as porcentagens.
+    /*Quanto à configuração das cores, cuidado ao usar as porcentagens.
                    colocar porcentagem em mais de uma cor pode causar uma quebra ("degrau") no
                    gradiente.*/
-
     background-repeat: none;
     background-size: cover;
-    height: 740px; /*   -> É importante fixar a altura da box, padronizando a visualização da home*/ 
-
-
+    height: 740px;
+    /*   -> É importante fixar a altura da box, padronizando a visualização da home*/
     display: flex;
     flex-direction: column;
-    justify-content: center;/*Como aqui a flex-dir é column, esse comando "cola" os elementos no centro, verticalmente.*/
-    align-items: flex-start;/*Esse é o comando certo para manter os elementos à esquerda*/
+    justify-content: center;
+    /*Como aqui a flex-dir é column, esse comando "cola" os elementos no centro, verticalmente.*/
+    align-items: flex-start;
+    /*Esse é o comando certo para manter os elementos à esquerda*/
     /*NOTA: note que tanto o justify-content qt o align-items mudam a orientação (vertical/horizontal) de acordo com
     o valor da flex-direction.*/
-
 }
 
-.destaques .container {
-    margin-top: -5em;  /* AJUSTE DE POSIÇÃO DA CAIXA DE TEXTO DOS DESTAQUES*/
-    margin-left: 2.5em;   /* AJUSTE DE POSIÇÃO DA CAIXA DE TEXTO DOS DESTAQUES*/
-    padding: 1% 3% 3% 10px; /* O PADDING SUPERIOR EM PORCENTAGEM PERMITE O AJUSTE DA ALTURA
+.destaques .destaquesContainer {
+    margin-top: -7em;
+    /* AJUSTE DE POSIÇÃO DA CAIXA DE TEXTO DOS DESTAQUES*/
+    /*  FEITO NA CLASSE CONTAINER ----> AJUSTE DE POSIÇÃO DA CAIXA DE TEXTO DOS DESTAQUES*/
+    padding: 1% 0 3% 0;
+    /* O PADDING SUPERIOR EM PORCENTAGEM PERMITE O AJUSTE DA ALTURA
                               EM FUNÇÃO DA LARGURA DA TELA, JÁ QUE NESSE CASO TODOS OS PADDINGS
                               EM PORCENTAGEM SEGUEM SEMPRE A LARGURA DA DIV PAI */
     display: flex;
     flex-direction: column;
-    justify-content: center;/*Como aqui a flex-dir é column, esse comando "cola" os elementos no centro, verticalmente.*/
-    align-items: flex-start;/*Esse é o comando certo para manter os elementos à esquerda*/
+    justify-content: center;
+    /*Como aqui a flex-dir é column, esse comando "cola" os elementos no centro, verticalmente.*/
+    align-items: flex-start;
+    /*Esse é o comando certo para manter os elementos à esquerda*/
     /*NOTA: note que tanto o justify-content qt o align-items mudam a orientação (vertical/horizontal) de acordo com
     o valor da flex-direction.*/
 }
@@ -164,10 +179,10 @@ header nav a:hover {
 .destaques .titulo {
     width: 35%;
     font-size: 2.2em;
-    font-family: 'Trebuchet MS',  Arial, sans-serif;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
-.destaques .descricao {
+.destaques .descricaoDestaques {
     margin-top: 8px;
     width: 40%;
     margin-bottom: 20px;
@@ -176,26 +191,28 @@ header nav a:hover {
 
 .destaques .envelope-btn {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     align-items: flex-end;
     justify-content: space-between;
+    padding-right: 47vw;
 }
 
 .destaques .btn {
     color: #CCC;
-    background-color: rgba(0,0,0,.8);
-    border: none; /*É preciso tirar as bordas, pq os botões vêm com ela por padrão*/
-
+    background-color: rgba(0, 0, 0, .8);
+    border: none;
+    /*É preciso tirar as bordas, pq os botões vêm com ela por padrão*/
     padding: 10px 15px;
-    margin-right:7em;
-
-    cursor: pointer; /*Aqui o cursor muda para 'mãoznha' sempre que o mouse passa pelo botão*/
-    transition: 0.4s; /*Controla o tempo e como é feita a transição para o hover*/
+    margin-right: 7em;
+    cursor: pointer;
+    /*Aqui o cursor muda para 'mãoznha' sempre que o mouse passa pelo botão*/
+    transition: 0.4s;
+    /*Controla o tempo e como é feita a transição para o hover*/
 }
 
 .destaques .btn:hover {
     color: black;
-    background-color: rgba(255,255,255,1);
+    background-color: rgba(255, 255, 255, 1);
     font-weight: bold;
 }
 
@@ -204,34 +221,192 @@ header nav a:hover {
 }
 
 
-
 /*  CARROSSEL DE IMAGENS  */
 
 .carrossel-container {
-    margin-top: -140px;  /* AJUSTE DE ALTURA DO CARROSSEL EM RELAÇÃO AOS DESTAQUES */
+    margin-top: -160px;
+    /* AJUSTE DE ALTURA DO CARROSSEL EM RELAÇÃO AOS DESTAQUES */
+}
+
+.h2-container {
+    font-size: 1.5em;
+    margin-bottom: 2vw;
 }
 
 .carrossel-filmes {
-    padding: 1.5%;
+    padding: 0;
 }
 
 .movie-box {
+    height: 152px;
+    width: 271px;
+    display: block;
+    text-decoration: none;
+}
+
+.movie-box .preview-image {
+    background-repeat: none;
+    background-size: cover;
     height: 100%;
     width: 100%;
+}
+
+.link-box {
+    margin: 0 auto;
+}
+
+.link-box:hover .descricaoMovie {
+    background-color: black;
+    color: white;
+}
+
+.link-box:hover .small-prev-overlay {
     display: block;
 }
 
+.link-box .descricaoMovie {
+    width: 271px;
+    margin-top: 0;
+    background-color: var(--preto);
+    color: var(--preto);
+    padding: 2px 3px 2px 3px;
+}
+
+.descricaoText {
+    color: inherit;
+    font-weight: bold;
+}
+
+.small-prev-overlay {
+    display: none;
+    background-image: url("../img/thumbnails/peq/thumb-overlay/overlay.png");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: 2000;
+    height: 152px;
+    width: 271px;
+}
+
+
+/*Ajuste de margin 2 carrossel*/
+
+#carrossel-small-2 {
+    margin-top: 35vh;
+}
+
+
+/* Carrossel Big */
+
+.carrossel-big-container {
+    display: flex;
+    margin-top: 25vh;
+    height: 300px;
+}
+
+#carousel-big-1 {
+    width: 60%;
+    height: 100%;
+}
+
+.link-box-big:hover .big-prev-overlay {
+    display: block;
+}
+
+.movie-box-big {
+    height: 300px;
+    width: 300px;
+}
+
+.movie-box-big img {
+    height: 100%;
+    width: 100%;
+}
+
+.big-prev-overlay {
+    display: none;
+    background-image: url("../img/thumbnails/big/thumb-overlay/overlay-big.png");
+    position: absolute;
+    top: 0;
+    z-index: 2000;
+    height: 300px;
+    width: 300px;
+}
+
+.big-descricaoMovie {
+    width: 300px;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    padding: 6px 0 2px 0;
+}
+
+.big-descricaoText {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.carrossel-big-container .title-text-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: space-around;
+    padding: 0 0 0 7vw;
+}
+
+.carrossel-big-container .title-text-right h2 {
+    font-size: 4em;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.carrossel-big-container .title-text-right p {
+    font-size: 1.2em;
+}
+
+.title-text-right .span-highlight {
+    color: var(--amarelo);
+}
+
+
+/* FOOTER */
+
 footer {
+    margin-top: 25vh;
     width: 100%;
     background-color: black;
+    padding-bottom: 11px;
 }
+
+footer nav {
+    text-align: center;
+    margin-bottom: 15px;
+    padding-top: 20px;
+}
+
+.copy-text-small {
+    color: var(--amarelo);
+    font-weight: bold;
+}
+
+footer nav p {
+    font-size: 1.3em;
+    margin-bottom: 9px;
+}
+
+.copy-symbol {
+    font-size: 0.8em;
+}
+
 footer #copyrights {
-    color: rgba(255,255,255,.8);
+    color: rgba(255, 255, 255, .8);
     line-height: 1.5em;
     text-align: center;
     padding: 5px 20% 25px 20%;
 }
-footer #copyrights span {
+
+footer #copyrights a {
+    text-decoration: none;
     font-weight: bold;
-    color: rgba(255,255,255,1);
+    color: rgba(255, 255, 255, 1);
 }
