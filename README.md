@@ -17,7 +17,7 @@ Projeto de site de ajuda para quem quer começar a aprender programação, no es
 ## Descrição:
 
 <p>
-Há um público enorme que está começando no código, mas não tem recursos suficientes para levar adiante seus estudos, de uma forma tradicional(paga). E nem precisa... A internet está abarrotada com até muito mais do que é necessário aprender, para está começando. A proposta desse projeto é aproximar esse público do melhor que é possivel encontrar hoje - completamente free - na web. (Nota: Esse projeto é apenas uma demonstração, não será 'subido' ou listá-lo em mecanismos de buscas)
+Há um público enorme que está começando no código, mas não tem recursos suficientes para levar adiante seus estudos, de uma forma tradicional(paga). E nem precisa... A internet está abarrotada com até muito mais do que é necessário aprender, para está começando. A proposta desse projeto é aproximar esse público do melhor que é possivel encontrar hoje - completamente free - na web. (Nota: Esse projeto é apenas uma demonstração, não será 'subido' ou listado em mecanismos de buscas)
 </p>
 
 ## Aspectos técnicos
