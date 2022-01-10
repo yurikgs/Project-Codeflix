@@ -37,9 +37,9 @@
             align-items: top;
             justify-content: space-between;
             /*Ajuste pós troca de ícone next/prev : */
-            margin-top: -0.8vh;
-            margin-left: -0.4vw;
-            width: 100.9%;
+            margin-top: -5px;
+            margin-left: -0.65vw;
+            width: 101.45%;
         }
         
         #carousel-big-1 .owl-nav.disabled {
@@ -48,6 +48,12 @@
         
         #carousel-big-1 .owl-dot {
             display: none;
+        }
+        
+        @media screen and (max-width:760px) {
+            .carousel-small-container .owl-theme .owl-nav {
+                display: none;
+            }
         }
     </style>
 </head>
@@ -81,22 +87,24 @@
 
         <div class="destaques">
             <div class=" marginContainer destaquesContainer">
-                <h3 class="titulo">Curso Em Vídeo Guanabara - Nova Série Html/CSS</h3>
+                <h2 class="titulo">Curso Em Vídeo Guanabara - Nova Série Html/CSS</h2>
                 <p class="descricaoDestaques">O mais badalado do youtube agora com a nova série de hmtl5 / CSS3 atualizadíssimos. Conteúdo completo, bem explicado e orientado ao mercado de trabalho. Confira!
                 </p>
 
 
                 <div class="envelope-btn">
                     <button class="btn" role="button">
-                            <i class="fas fa-info"></i>
-                            VEJA O CANAL
-                        </button>
+                                        <i class="fas fa-info"></i>
+                                        VEJA O CANAL
+                                    </button>
                     <button class="btn" role="button">
-                            <i class="fas fa-play"></i>
-                            ASSISTIR PLAYLIST AGORA
-                        </button>
+                                        <i class="fas fa-play"></i>
+                                        ASSISTIR PLAYLIST AGORA
+                                    </button>
                 </div>
             </div>
+        </div>
+        </div class="extra-overlay" style="background-color:black; height: 100vh; position: absolute; top: 0; z-index: 700">
         </div>
 
     </main>
@@ -117,7 +125,7 @@
                 <div class="link-box item">
                     <div class="movie-box">
 
-                        <div class="preview-image" style="background-image: url(/img/thumbnails/peq/thumbs/guanabara-html5-ccs3.jpg)"></div>
+                        <div class="preview-image" style="background-image: url(img/thumbnails/peq/thumbs/guanabara-html5-ccs3.jpg)"></div>
 
                     </div>
                     <div class="descricaoMovie">
@@ -132,7 +140,7 @@
                 <div class="link-box item">
                     <div class="movie-box">
 
-                        <div class="preview-image" style="background-image: url(/img/thumbnails/peq/thumbs/codigo-fonte-ecossistema-js.jpg)"></div>
+                        <div class="preview-image" style="background-image: url(img/thumbnails/peq/thumbs/codigo-fonte-ecossistema-js.jpg)"></div>
 
                     </div>
                     <a class="small-prev-overlay" href="https://www.youtube.com/watch?v=GML8zQJg9D4&list=PLVc5bWuiFQ8HA-_-_wjRSSrR27IqfbtPc">
@@ -147,7 +155,7 @@
                 <div class="link-box item">
                     <div class="movie-box">
 
-                        <div class="preview-image" style="background-image: url(/img/thumbnails/peq/thumbs/guanabara-javascript-do-zero.jpg)"></div>
+                        <div class="preview-image" style="background-image: url(img/thumbnails/peq/thumbs/guanabara-javascript-do-zero.jpg)"></div>
 
                     </div>
                     <a class="small-prev-overlay" href="https://www.youtube.com/watch?v=1-w1RfGIov4&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1">
@@ -162,7 +170,7 @@
                 <div class="link-box item">
                     <div class="movie-box">
 
-                        <div class="preview-image" style="background-image: url(/img/thumbnails/peq/thumbs/michelli-brito-jpa-persistence-api.jpg)"></div>
+                        <div class="preview-image" style="background-image: url(img/thumbnails/peq/thumbs/michelli-brito-jpa-persistence-api.jpg)"></div>
 
                     </div>
                     <a class="small-prev-overlay" href="https://www.youtube.com/watch?v=TQQki9yQaLg&list=PL8iIphQOyG-CLO45G8gWP6sCMxsB4eIQR">
@@ -177,7 +185,7 @@
                 <div class="link-box item">
                     <div class="movie-box">
 
-                        <div class="preview-image" style="background-image: url(/img/thumbnails/peq/thumbs/codigo-fonte-mao-no-codigo.jpg)"></div>
+                        <div class="preview-image" style="background-image: url(img/thumbnails/peq/thumbs/codigo-fonte-mao-no-codigo.jpg)"></div>
 
                     </div>
                     <a class="small-prev-overlay" href="https://www.youtube.com/watch?v=LT-iNSrGoP8&list=PLVc5bWuiFQ8FQIWovvUiOO9ok_b6chPsh">
@@ -200,6 +208,12 @@
 
 
     <section class="marginContainer carrossel-big-container">
+
+        <article class="title-text-right" id="carousel-big-1-responsive-text">
+            <h2>O que é <span class="span-highlight">+</span> <em>a sua cara?</em></h2>
+            <p>Escolha a seleção de conteúdo que <span class="span-highlight"> combina mais com <strong>você!</strong></span>
+            </p>
+        </article>
 
         <article class="owl-carousel owl-theme" id="carousel-big-1">
 
@@ -276,7 +290,7 @@
 
         </article>
 
-        <article class="title-text-right" style="width: 40%; height: 100%;">
+        <article class="title-text-right">
             <h2>O que é <span class="span-highlight">+</span><br><em>a sua cara?</em></h2>
             <p>Escolha a seleção de conteúdo que <span class="span-highlight"> combina mais com <strong>você!</strong></span>
             </p>
@@ -302,7 +316,7 @@
                 <div class="link-box item">
                     <div class="movie-box">
 
-                        <div class="preview-image" style="background-image: url(/img/thumbnails/peq/thumbs/node-studios-php7.jpg)"></div>
+                        <div class="preview-image" style="background-image: url(img/thumbnails/peq/thumbs/node-studios-php7.jpg)"></div>
 
                     </div>
                     <div class="descricaoMovie">
@@ -317,7 +331,7 @@
                 <div class="link-box item">
                     <div class="movie-box">
 
-                        <div class="preview-image" style="background-image: url(/img/thumbnails/peq/thumbs/ricardo-maroquio-html5-css3.jpg)"></div>
+                        <div class="preview-image" style="background-image: url(img/thumbnails/peq/thumbs/ricardo-maroquio-html5-css3.jpg)"></div>
 
                     </div>
                     <a class="small-prev-overlay" href="https://www.youtube.com/watch?v=aInMGjLRB-g&list=PL0YuSuacUEWuLNDAAJxATh54w_XmrLkk4">
@@ -333,7 +347,7 @@
                 <div class="link-box item">
                     <div class="movie-box">
 
-                        <div class="preview-image" style="background-image: url(/img/thumbnails/peq/thumbs/guanabara-javascript-do-zero.jpg)"></div>
+                        <div class="preview-image" style="background-image: url(img/thumbnails/peq/thumbs/guanabara-javascript-do-zero.jpg)"></div>
 
                     </div>
                     <a class="small-prev-overlay" href="https://www.youtube.com/watch?v=1-w1RfGIov4&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1">
@@ -348,7 +362,7 @@
                 <div class="link-box item">
                     <div class="movie-box">
 
-                        <div class="preview-image" style="background-image: url(/img/thumbnails/peq/thumbs/guanabara-java-do-zero.jpg)"></div>
+                        <div class="preview-image" style="background-image: url(img/thumbnails/peq/thumbs/guanabara-java-do-zero.jpg)"></div>
 
                     </div>
                     <a class="small-prev-overlay" href="https://www.youtube.com/watch?v=sTX0UEplF54&list=PLHz_AreHm4dkI2ZdjTwZA4mPMxWTfNSpR">
@@ -363,7 +377,7 @@
                 <div class="link-box item">
                     <div class="movie-box">
 
-                        <div class="preview-image" style="background-image: url(/img/thumbnails/peq/thumbs/ricardo-maroquio-c-sharp.jpg)"></div>
+                        <div class="preview-image" style="background-image: url(img/thumbnails/peq/thumbs/ricardo-maroquio-c-sharp.jpg)"></div>
 
                     </div>
                     <a class="small-prev-overlay" href="https://www.youtube.com/playlist?list=PL0YuSuacUEWsHR_a22z31bvA2heh7iUgr">

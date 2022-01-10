@@ -158,6 +158,11 @@ header nav a:hover {
     o valor da flex-direction.*/
 }
 
+
+/* .destaques .extra-overlay {
+    display: none;
+} */
+
 .destaques .destaquesContainer {
     margin-top: -7em;
     /* AJUSTE DE POSIÇÃO DA CAIXA DE TEXTO DOS DESTAQUES*/
@@ -174,6 +179,7 @@ header nav a:hover {
     /*Esse é o comando certo para manter os elementos à esquerda*/
     /*NOTA: note que tanto o justify-content qt o align-items mudam a orientação (vertical/horizontal) de acordo com
     o valor da flex-direction.*/
+    font-size: 1.5vw;
 }
 
 .destaques .titulo {
@@ -292,7 +298,7 @@ header nav a:hover {
 /*Ajuste de margin 2 carrossel*/
 
 #carrossel-small-2 {
-    margin-top: 35vh;
+    margin-top: 240px;
 }
 
 
@@ -302,6 +308,10 @@ header nav a:hover {
     display: flex;
     margin-top: 25vh;
     height: 300px;
+}
+
+#carousel-big-1-responsive-text {
+    display: none;
 }
 
 #carousel-big-1 {
@@ -347,6 +357,8 @@ header nav a:hover {
 }
 
 .carrossel-big-container .title-text-right {
+    width: 40%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

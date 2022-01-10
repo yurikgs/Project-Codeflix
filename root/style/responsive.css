@@ -1,5 +1,85 @@
-@media  screen and (max-width:700px){
-    
+/*Carrossel Grande (Big)*/
+
+@media screen and (max-width:1150px) {
+    .carrossel-big-container .title-text-right h2 {
+        margin-top: 0;
+        font-size: 3.7em;
+    }
+}
+
+@media screen and (max-width:876px) {
+    .carrossel-big-container .title-text-right h2 {
+        margin-top: 0;
+        font-size: 3.2em;
+    }
+}
+
+@media screen and (max-width:758px) {
+    .carrossel-big-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10vw 0 35vw 0;
+        height: 250px;
+    }
+    #carousel-big-1 {
+        display: block;
+        width: 250px;
+        margin: 0 auto;
+    }
+    #carousel-big-1 .owl-item {
+        width: 250;
+    }
+    #carousel-big-1-responsive-text {
+        display: block;
+        text-align: center;
+        width: 90%;
+        margin-bottom: 6vw;
+    }
+    #carousel-big-1-responsive-text h2 {
+        font-size: 2.7em;
+    }
+    .carrossel-big-container .title-text-right {
+        display: none;
+    }
+    .carrossel-big-container img {
+        height: 250px;
+        width: 250px;
+    }
+    .movie-box-big {
+        height: 250px;
+        width: 250px;
+    }
+    .big-descricaoMovie {
+        width: 250px;
+    }
+    .big-prev-overlay {
+        width: 250px;
+    }
+    /* Geral - títulos e margens */
+    .marginContainer {
+        margin-left: 7vw;
+        margin-right: 7vw;
+    }
+    .destaques {
+        padding-top: 35px;
+    }
+    .destaques .titulo {
+        font-size: 2em;
+        width: 45%;
+    }
+    .destaques .descricaoDestaques {
+        font-size: 0.9em;
+    }
+    .carrossel-container .h2-container {
+        font-size: 1.3em;
+    }
+}
+
+
+/* Geral */
+
+@media screen and (max-width:700px) {
     header .container {
         display: flex;
         flex-direction: column;
@@ -8,61 +88,30 @@
         margin: 0;
         margin-bottom: 8px;
     }
-    .destaques .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+}
 
-        margin: 0;
-        text-align: center;
-    }
-    .destaques .titulo {
-        margin-top: 4%;
-        margin-bottom: 15px;
-        width: 60%;
-        font-size: 2.2em;
-        font-family: 'Trebuchet MS',  Arial, sans-serif;
-    } 
-    .destaques .descricao {
-        margin-top: 8px;
-        width: 60%;
-        margin-bottom: 20px;
-        font-size: 0.9em;
-    }   
-    .destaques .envelope-btn {
-        display: flex;
-        flex-direction:column;
-        align-items: center;
-        justify-content: center;
-    }
-    .destaques .btn {
-        margin: 0;                /*ZERAR A MARGEM AQUI PERMITECONSEGUIR ALINHAR PERFEITAMENTE OS
-                                    OS BOTÕES, COISA QUE A MARGEM DIREITA CONFIGURADA EM MAIN.CSS
-                                    IMPEDIRIA*/
-        margin-bottom: 0.5em;
-    }
-
-
+*/
 /* CORREÇÃO DO MENU SUPERIOR, EM QUE A LETRA TRANSBORDA O FUNDO PRETO QUANDO NO PADRÃO RESPONSIVO */
 
-
-    header #logo {
-    color: var(--vermelho);
+header #logo {
+    color: var(--amarelo);
     font-family: sans-serif, arial, times;
     font-size: 38px;
     margin-bottom: 2px;
 }
 
 
-
 /*É PRECISO FAZER A ALTERAÇÃO DO MENU ESTÁTICO TAMBÉM, MESMO ELE SENDO TANSPARENTE, SE NÃO QUANDO 
 ROLAR A PÁGINA AS LETRAS VÃO "SALTAR"*/
-.menuEstatico {                         /* MODIFICAÇÃO DO MENU DE ACORDO COM O SCROLL (C/ JQUERY) */
-    background-color: rgba(0,0,0,0);
+
+.menuEstatico {
+    /* MODIFICAÇÃO DO MENU DE ACORDO COM O SCROLL (C/ JQUERY) */
+    background-color: rgba(0, 0, 0, 0);
     height: 70px;
 }
 
-.menuScroll {                           /* MODIFICAÇÃO DO MENU DE ACORDO COM O SCROLL (C/ JQUERY) */
+.menuScroll {
+    /* MODIFICAÇÃO DO MENU DE ACORDO COM O SCROLL (C/ JQUERY) */
     background-color: var(--preto);
     height: 70px;
 }
@@ -71,59 +120,254 @@ header .container {
     justify-content: center;
 }
 
+
+/* @media screen and (max-width: 783px) {
+        .destaques {
+            font-size: 1.1em;
+        }
+    } */
+
+@media screen and (max-width: 632px) {
+    #carrossel-small-2 {
+        margin-top: 310px;
+        margin-bottom: -30px;
+    }
 }
 
-@media screen and (max-width: 364px){
+@media screen and (max-width: 590px) {
+    .carrossel-container {
+        margin-top: -100px;
+    }
+}
 
-/* AUMENTA O TAMANHO DO FUNDO DO HEADER, PARA CABER TODAS AS LETRAS: */
+@media screen and (max-width: 547px) {
+    .destaques .destaquesContainer {
+        margin-top: -2em;
+        padding: 1% 0 3% 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .marginContainer {
+        margin-left: 8vw;
+        margin-right: 8vw;
+    }
+    .carrossel-container {
+        margin-top: -40px;
+    }
+    .destaques .titulo {
+        margin-top: 4%;
+        margin-bottom: 15px;
+        width: 70%;
+        font-size: 1.7em;
+        font-family: 'Trebuchet MS', Arial, sans-serif;
+    }
+    .destaques .descricaoDestaques {
+        margin-top: 8px;
+        width: 60%;
+        margin-bottom: 20px;
+        font-size: 0.9em;
+    }
+    .destaques .envelope-btn {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 68%;
+    }
+    .destaques .btn {
+        margin: 0;
+        margin-bottom: 0.5em;
+        margin-right: 15vw;
+        font-size: 0.6em;
+    }
+}
 
-    .menuEstatico {                         /* MODIFICAÇÃO DO MENU DE ACORDO COM O SCROLL (C/ JQUERY) */
-        background-color: rgba(0,0,0,0);
+
+/*Configuração do header/destaques*/
+
+@media screen and (max-width: 1350) {
+    .destaques .titulo {
+        width: 40%;
+        font-size: 2.2em;
+        font-family: 'Trebuchet MS', Arial, sans-serif;
+    }
+    .destaques .descricaoDestaques {
+        margin-top: 8px;
+        width: 40%;
+        margin-bottom: 20px;
+        font-size: 0.9em;
+    }
+    .destaques .envelope-btn {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-right: 0vw;
+        width: 45vw;
+    }
+}
+
+@media screen and (max-width: 1197px) {
+    .destaques .destaquesContainer {
+        font-size: inherit;
+    }
+    .destaques .titulo {
+        width: 40%;
+        font-size: 2.2em;
+        font-family: 'Trebuchet MS', Arial, sans-serif;
+    }
+    .destaques .descricaoDestaques {
+        margin-top: 8px;
+        width: 40%;
+        margin-bottom: 20px;
+        font-size: 0.9em;
+    }
+    .destaques .envelope-btn {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-right: 0vw;
+        width: 45vw;
+    }
+}
+
+@media screen and (max-width: 981px) {
+    .destaques .destaquesContainer {
+        font-size: 0.9em;
+    }
+    .destaques .titulo {
+        width: 45%;
+        font-size: 2.2em;
+        font-family: 'Trebuchet MS', Arial, sans-serif;
+    }
+    .destaques .descricaoDestaques {
+        margin-top: 8px;
+        width: 45%;
+        margin-bottom: 20px;
+        font-size: 0.9em;
+    }
+    .destaques .envelope-btn {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-right: 0vw;
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .destaques .destaquesContainer {
+        font-size: 0.9em;
+    }
+    .destaques .titulo {
+        width: 50%;
+        font-size: 2.2em;
+        font-family: 'Trebuchet MS', Arial, sans-serif;
+    }
+    .destaques .descricaoDestaques {
+        margin-top: 8px;
+        width: 50%;
+        margin-bottom: 20px;
+        font-size: 0.9em;
+    }
+    .destaques .envelope-btn {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-right: 0vw;
+        width: 55vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .destaques .destaquesContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        text-align: center;
+    }
+    .destaques .titulo {
+        margin-top: 4%;
+        margin-bottom: 15px;
+        width: 55%;
+        font-size: 2.2em;
+        font-family: 'Trebuchet MS', Arial, sans-serif;
+    }
+    .destaques .descricaoDestaques {
+        margin-top: 8px;
+        width: 55%;
+        margin-bottom: 20px;
+        font-size: 0.9em;
+    }
+    .destaques .envelope-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        width: 45vw
+    }
+    .destaques .btn {
+        margin: 0;
+        /*ZERAR A MARGEM AQUI PERMITECONSEGUIR ALINHAR PERFEITAMENTE OS
+                                    OS BOTÕES, COISA QUE A MARGEM DIREITA CONFIGURADA EM MAIN.CSS
+                                    IMPEDIRIA*/
+        margin-bottom: 0.5em;
+    }
+    /*Deixar o fundo mais escuro, se não ele some...*/
+    .destaques .destaquesContainer {
+        background: linear-gradient(to bottom, var(--pretoTransp1), rgba(0, 0, 0, .2) 70%, var(--preto));
+    }
+}
+
+@media screen and (max-width: 364px) {
+    /* AUMENTA O TAMANHO DO FUNDO DO HEADER, PARA CABER TODAS AS LETRAS: */
+    .menuEstatico {
+        /* MODIFICAÇÃO DO MENU DE ACORDO COM O SCROLL (C/ JQUERY) */
+        background-color: rgba(0, 0, 0, 0);
         height: 93px;
     }
-    
-    .menuScroll {                           /* MODIFICAÇÃO DO MENU DE ACORDO COM O SCROLL (C/ JQUERY) */
+    .menuScroll {
+        /* MODIFICAÇÃO DO MENU DE ACORDO COM O SCROLL (C/ JQUERY) */
         background-color: var(--preto);
         height: 93px;
     }
-
-/* DEIXA OS ITENS DE MENU JUSTIFICADOS NO CENTRO: */
-
+    /* DEIXA OS ITENS DE MENU JUSTIFICADOS NO CENTRO: */
     header nav {
         text-align: center;
         line-height: 1.2em;
     }
-
-    .fonteEstatica {                     /* MODIFICAÇÃO DO MENU DE ACORDO COM O SCROLL (C/ JQUERY) */
+    .fonteEstatica {
+        /* MODIFICAÇÃO DO MENU DE ACORDO COM O SCROLL (C/ JQUERY) */
         display: inline;
     }
-    
-    .fonteScroll {                       /* MODIFICAÇÃO DO MENU DE ACORDO COM O SCROLL (C/ JQUERY) */
+    .fonteScroll {
+        /* MODIFICAÇÃO DO MENU DE ACORDO COM O SCROLL (C/ JQUERY) */
         display: inline;
     }
-
-
-/* MELHORA A PROPORÇÃO E O TAMANHO DO TÍTULO E DA DESCRIÇÃO, E GARANTE MARGEM SUFICIENTE ENTRE
+    /* MELHORA A PROPORÇÃO E O TAMANHO DO TÍTULO E DA DESCRIÇÃO, E GARANTE MARGEM SUFICIENTE ENTRE
 O TÍTULO E O CABEÇALHO ESTÁTICO: */
-
-.destaques .titulo {
-    width: 75%;
-    font-size: 2.1em;
-    font-family: 'Trebuchet MS',  Arial, sans-serif;
-}
-
-.destaques .descricao {
-    margin-top: 8px;
-    width: 75%;
-    margin-bottom: 20px;
-    font-size: 0.8em;
-    line-height: 1.5em;
-}
-
-/* CORRIGE A DISTÂNCIA ENTRE OS BOTOES E OS VÍDEOS: */
-
-.destaques .envelope-btn {
-    margin-bottom: 30px;
-}
-
+    .destaques .titulo {
+        width: 75%;
+        font-size: 2.1em;
+        font-family: 'Trebuchet MS', Arial, sans-serif;
+    }
+    .destaques .descricao {
+        margin-top: 8px;
+        width: 75%;
+        margin-bottom: 20px;
+        font-size: 0.8em;
+        line-height: 1.5em;
+    }
+    /* CORRIGE A DISTÂNCIA ENTRE OS BOTOES E OS VÍDEOS: */
+    .destaques .envelope-btn {
+        margin-bottom: 30px;
+    }
 }
